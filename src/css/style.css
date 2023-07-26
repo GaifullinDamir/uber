@@ -2,8 +2,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
-header {
-    height: 53px;
+nav {
+    min-height: 53px;
     background: #212121;
 }
 
@@ -26,4 +26,63 @@ header {
 .menu .menu_item {
     border-right: 2px dotted #000000;
     padding-right: 30px;
+}
+
+.subheader {
+    height: 84px;
+    background: rgba(0, 0, 0, .6);
+}
+
+.subheader .subheader_link {
+    display: block;
+    max-width: 100%;
+    margin-top: 16px;
+}
+
+.subheader .subheader_official {
+    margin-top: 6px;
+    color: #FFF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 100;
+    opacity: .6;
+}
+
+.subheader .subheader_call {
+    display: block;
+    margin-top: 24px;
+    color: #FFF;
+    text-align: right;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.subheader .subheader_phone {
+    display: block;
+    color: #FFF;
+    text-align: right;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.subheader .subheader_btn {
+    margin-top: 19px;
+    width: 172px;
+    height: 46px;
+    border-radius: 4px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.12) inset;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.21);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
 }
