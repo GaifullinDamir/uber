@@ -189,10 +189,11 @@ nav {
 }
 
 .advantages .advanteges_card {
+    /* min-height: 150px; */
     margin-top: 16px;
     margin-bottom: 26px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -207,12 +208,19 @@ nav {
 }
 
 .advantages .advanteges_card .advantages_descr {
-    width: 370px;
+    padding-left: 25px;
     color: #202020;
     font-size: 15px;
     font-style: normal;
     font-weight: 300;
     line-height: 21px;
+} 
+.left{
+    width: 371px;
+}
+
+.right{
+    width: 340px;
 } 
 
 .advantages .advanteges_card .advantages_descr span{
