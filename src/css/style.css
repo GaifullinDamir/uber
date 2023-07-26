@@ -1,3 +1,29 @@
-html {
+* {
     font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 53px;
+    background: #212121;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 74px;
+    margin: 0;
+    list-style: none;
+}
+
+.menu .menu_link {
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.menu .menu_item {
+    border-right: 2px dotted #000000;
+    padding-right: 30px;
 }
