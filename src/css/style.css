@@ -163,7 +163,7 @@ nav {
     background: #FFF;
 }
 
-.advantages .advantages_div {
+.advantages .label {
     margin: 0 auto;
     margin-top: 17px;
     background: #000;
@@ -177,7 +177,7 @@ nav {
     text-transform: uppercase;
 }
 
-.advantages .advantages_header {
+.advantages .title {
     margin-top: 33px;
     color: #222;
     text-align: center;
