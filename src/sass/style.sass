@@ -1,3 +1,9 @@
+$beauty-blue: #1EACC7
+$white: #ffffff
+$black: #000000
+$less-black: #222222
+$pale-red: ff5656 
+	
 * 
 	font-family: 'Roboto', sans-serif 
 header 
@@ -7,7 +13,7 @@ nav
 	top: 0 
 	width: 100% 
 	min-height: 53px 
-	background: #212121 
+	background: $less-black
 	z-index: 1 
 .menu 
 	display: flex 
@@ -16,13 +22,13 @@ nav
 	margin: 0 
 	list-style: none 
 	.menu_link 
-		color: #FFF 
+		color: $white 
 		font-size: 15px 
 		font-style: normal 
 		font-weight: 300 
 		text-decoration: none 
 	.menu_item 
-		border-right: 2px dotted #000000 
+		border-right: 2px dotted $black 
 		padding-right: 30px 
 .subheader 
 	margin-top: 53px 
@@ -36,7 +42,7 @@ nav
 		margin-top: 16px 
 	.subheader_official 
 		margin-top: 6px 
-		color: #FFF 
+		color: $white
 		font-size: 13px 
 		font-style: normal 
 		font-weight: 100 
@@ -44,14 +50,14 @@ nav
 	.subheader_call 
 		display: block 
 		margin-top: 20px 
-		color: #FFF 
+		color: $white
 		text-align: right 
 		font-size: 12px 
 		font-style: normal 
 		font-weight: 300 
 	.subheader_phone 
 		display: block 
-		color: #FFF 
+		color: $white
 		text-align: right 
 		font-size: 22px 
 		font-style: normal 
@@ -63,9 +69,9 @@ nav
 		width: 172px 
 		height: 46px 
 		border-radius: 4px 
-		background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%) 
+		background: linear-gradient(0deg, $beauty-blue 0%, #4CE2FF 100%) 
 		box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.12) inset 
-		color: #FFF 
+		color: $white
 		text-align: center 
 		text-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.21) 
 		font-family: Roboto 
@@ -81,7 +87,7 @@ nav
 	.promo_header 
 		display: block 
 		margin: 0 
-		color: #FFF 
+		color: $white
 		text-align: center 
 		font-size: 60px 
 		font-style: normal 
@@ -90,7 +96,7 @@ nav
 		text-transform: uppercase 
 	.promo_subheader 
 		margin: 0 
-		color: #FFF 
+		color: $white
 		text-align: center 
 		font-size: 36px 
 		font-style: normal 
@@ -99,7 +105,7 @@ nav
 		text-transform: uppercase 
 	.promo_descr 
 		margin-top: 23px 
-		color: #FFF 
+		color: $white
 		text-align: center 
 		font-size: 18px 
 		font-style: normal 
@@ -112,9 +118,9 @@ nav
 		width: 259px 
 		height: 63px 
 		border-radius: 4px 
-		background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%) 
+		background: linear-gradient(0deg, $beauty-blue 0%, #4CE2FF 100%) 
 		box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.12) inset 
-		color: #FFF 
+		color: $white
 		text-align: center 
 		text-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.21) 
 		font-family: Roboto 
@@ -126,7 +132,7 @@ nav
 		border: none 
 .advantages 
 	min-height: 850px 
-	background: #FFF 
+	background: $white
 	.advanteges_card 
 		margin-top: 16px 
 		margin-bottom: 26px 
@@ -139,7 +145,7 @@ nav
 			align-items: center 
 			width: 116px 
 			height: 116px 
-			background: #1EACC7 
+			background: $beauty-blue
 			border-radius: 100% 
 		.advantages_descr 
 			padding-left: 25px 
@@ -149,7 +155,7 @@ nav
 			font-weight: 300 
 			line-height: 21px 
 			span 
-				color: #1EACC7 
+				color: $beauty-blue
 				font-size: 17px 
 				font-style: normal 
 				font-weight: 400 
@@ -162,10 +168,10 @@ nav
 .label 
 		margin: 0 auto 
 		margin-top: 17px 
-		background: #000 
+		background: $black
 		width: 113px 
 		padding: 5px 0 
-		color: #FFF 
+		color: $white 
 		text-align: center 
 		font-size: 11px 
 		font-style: normal 
@@ -173,7 +179,7 @@ nav
 		text-transform: uppercase 
 .title 
 	margin-top: 33px 
-	color: #222 
+	color: $less-black
 	text-align: center 
 	font-family: Roboto 
 	font-size: 38px 
@@ -183,7 +189,7 @@ nav
 
 .subtitle
 	margin-top: 7px
-	color: #222
+	color: $less-black
 	text-align: center
 	font-size: 17px
 	font-style: normal
@@ -193,3 +199,45 @@ nav
 	min-height: 864px
 	padding: 48px 0 80px 0
 	background: url('../img/third-page/bg/mobile_bg.png') center (center / cover) no-repeat
+	.row
+		margin-top: 32px
+	&_item
+		position: relative
+		width: 320px
+		height: 280px
+		margin: 0 auto
+		margin-bottom: 19px
+		padding-top: 92px
+		&_1
+			background: url(../img/third-page/card_1.jpg)
+		&_2
+			background: url(../img/third-page/card_2.jpg)
+		&_3
+			background: url(../img/third-page/card_3.jpg)
+		&_4
+			background: url(../img/third-page/card_4.jpg)
+		&_5
+			background: url(../img/third-page/card_5.jpg)
+		&_6
+			background: url(../img/third-page/card_6.jpg)
+		&_subtitle
+			color: $white
+			text-align: center
+			font-size: 24px
+			font-style: normal
+			font-weight: 400
+			line-height: 31px
+			text-transform: uppercase
+		&_plus
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			bottom: 35px
+			width: 26px
+			height: 26px
+			margin: 0 auto
+			cursor: pointer
+			img
+				width: 100%
+
+			
