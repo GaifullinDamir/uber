@@ -2,7 +2,7 @@ $beauty-blue: #1EACC7
 $white: #ffffff
 $black: #000000
 $less-black: #222222
-$pale-red: ff5656 
+$pale-red: #ff5656 
 	
 * 
 	font-family: 'Roboto', sans-serif 
@@ -244,8 +244,26 @@ nav
 .choice
 	min-height: 900px
 	padding-top: 59px
-	background: url('../img/fourth-page/bg/darkbg.png') center 0% / 101% 50% no-repeat
+	background: url('../img/fourth-page/bg/darkbg.png') center 0% / 101% 56% no-repeat, url('../img/fourth-page/bg/bg.png') center 100% / 101% 44% no-repeat
 	.label
 		background: $white
 		color: $black
+		font-size: 11px
+		font-weight: 400
 		border: none
+	.title
+		color: $white
+	.subtitle
+		color: $white
+		margin-top: 0
+	&_car_img
+		margin-top: 54px
+		img 
+			display: block
+			margin: 0 auto
+	&_descr
+		color: #222
+		text-align: center
+		font-size: 17px
+		font-weight: 300
+		line-height: 24px
