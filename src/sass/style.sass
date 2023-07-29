@@ -255,9 +255,32 @@ nav
 			width: 26px
 			height: 26px
 			margin: 0 auto
+			background-color: $black
+			border-radius: 100%
 			cursor: pointer
 			img
 				width: 100%
+			&::before
+				position: absolute
+				top: 45%
+				left: 48%
+				transform: translateX(-50%)
+				content: ''
+				display: block
+				width: 14px
+				height: 2px
+				background-color: $beauty-blue
+			&::after
+				position: absolute
+				left: 43%
+				top: 50%
+				transform: translateX(-50%)
+				transform: translateY(-50%)
+				content: ''
+				display: block
+				width: 3px
+				height: 14px
+				background-color: $beauty-blue
 
 			
 .choice
