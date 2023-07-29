@@ -79,7 +79,7 @@ nav
 		color: $white
 		text-align: center 
 		text-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.21) 
-		font-family: Roboto 
+		font-family: Roboto s
 		font-size: 14px 
 		font-style: normal 
 		font-weight: 400 
@@ -270,6 +270,7 @@ nav
 				width: 14px
 				height: 2px
 				background-color: $beauty-blue
+				transition: 0.3s all
 			&::after
 				position: absolute
 				left: 43%
@@ -281,6 +282,11 @@ nav
 				width: 3px
 				height: 14px
 				background-color: $beauty-blue
+				transition: 0.3s all
+			&:hover
+				&::before, &::after
+					background-color: $white
+					
 
 			
 .choice
@@ -305,8 +311,32 @@ nav
 			display: block
 			margin: 0 auto
 	&_descr
-		color: #222
+		color: $less-black
 		text-align: center
 		font-size: 17px
 		font-weight: 300
 		line-height: 24px
+
+.require
+	padding: 68px 0 90px 0
+	&_block
+		margin: 33px 
+		&_nmb
+			margin-bottom: 0px
+	&_title
+		color: #1CA8C3
+		font-size: 22px
+		font-style: normal
+		font-weight: 400
+		line-height: 24px
+	&_list
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 15px
+		&_item
+			margin-bottom: 7px
+			color: $less-black
+			font-size: 17px
+			font-style: normal
+			font-weight: 300
+			line-height: 24px
