@@ -1,9 +1,14 @@
-$beauty-blue: #1EACC7
+$beauty-blue: #1eacc7
 $white: #ffffff
 $black: #000000
 $less-black: #222222
 $pale-red: #ff5656 
 	
+@mixin btn_hover
+	&:hover
+		background-image: none
+		background-color: $beauty-blue
+
 * 
 	font-family: 'Roboto', sans-serif 
 header 
@@ -14,20 +19,20 @@ nav
 	width: 100% 
 	min-height: 53px 
 	background: $less-black
-	z-index: 1 
+	z-index: 5 
 .menu 
 	display: flex 
 	justify-content: space-between 
 	padding: 14px 74px 
 	margin: 0 
 	list-style: none 
-	.menu_link 
+	&_link 
 		color: $white 
 		font-size: 15px 
 		font-style: normal 
 		font-weight: 300 
 		text-decoration: none 
-	.menu_item 
+	&_item 
 		border-right: 2px dotted $black 
 		padding-right: 30px 
 .subheader 
@@ -36,18 +41,18 @@ nav
 	width: 100% 
 	min-height: 84px 
 	background: rgba(0, 0, 0, .6) 
-	.subheader_link 
+	&_link 
 		display: block 
 		max-width: 100% 
 		margin-top: 16px 
-	.subheader_official 
+	&_official 
 		margin-top: 6px 
 		color: $white
 		font-size: 13px 
 		font-style: normal 
 		font-weight: 100 
 		opacity: .6 
-	.subheader_call 
+	&_call 
 		display: block 
 		margin-top: 20px 
 		color: $white
@@ -55,7 +60,7 @@ nav
 		font-size: 12px 
 		font-style: normal 
 		font-weight: 300 
-	.subheader_phone 
+	&_phone 
 		display: block 
 		color: $white
 		text-align: right 
@@ -64,7 +69,7 @@ nav
 		font-weight: 400 
 		text-decoration: none 
 		line-height: 30px 
-	.subheader_btn 
+	&_btn 
 		margin-top: 19px 
 		width: 172px 
 		height: 46px 
@@ -80,11 +85,12 @@ nav
 		font-weight: 400 
 		text-transform: uppercase 
 		border: none 
+		@include btn_hover
 .promo 
 	min-height: 800px 
 	background: url('../img/first-page/bg/uber_bg.jpg') center center/cover no-repeat 
 	padding: 150px 0 135px 0 
-	.promo_header 
+	&_header 
 		display: block 
 		margin: 0 
 		color: $white
@@ -94,7 +100,7 @@ nav
 		font-weight: 900 
 		line-height: 62px 
 		text-transform: uppercase 
-	.promo_subheader 
+	&_subheader 
 		margin: 0 
 		color: $white
 		text-align: center 
@@ -103,7 +109,7 @@ nav
 		font-weight: 700 
 		line-height: 48px 
 		text-transform: uppercase 
-	.promo_descr 
+	&_descr 
 		margin-top: 23px 
 		color: $white
 		text-align: center 
@@ -111,7 +117,7 @@ nav
 		font-style: normal 
 		font-weight: 400 
 		line-height: 24px 
-	.promo_btn 
+	&_btn 
 		display: block 
 		margin: 0 auto 
 		margin-top: 118px 
@@ -130,17 +136,18 @@ nav
 		line-height: 63px 
 		text-transform: uppercase 
 		border: none 
+		@include btn_hover
 .advantages 
 	min-height: 850px 
 	padding-top: 17px
 	background: $white
-	.advanteges_card 
+	&_card 
 		margin-top: 16px 
 		margin-bottom: 26px 
 		display: flex 
 		justify-content: center 
 		align-items: center 
-		.advantages_imgbg 
+		&_imgbg 
 			display: flex 
 			justify-content: center 
 			align-items: center 
@@ -148,7 +155,7 @@ nav
 			height: 116px 
 			background: $beauty-blue
 			border-radius: 100% 
-		.advantages_descr 
+		&_descr 
 			padding-left: 25px 
 			color: #202020 
 			font-size: 15px 
@@ -177,6 +184,12 @@ nav
 		font-style: normal 
 		font-weight: 400 
 		text-transform: uppercase 
+		&_white
+			background: $white
+			color: $black
+			font-size: 11px
+			font-weight: 400
+			border: none
 .title 
 	margin-top: 33px 
 	color: $less-black
@@ -186,6 +199,8 @@ nav
 	font-style: normal 
 	font-weight: 700 
 	text-transform: uppercase 
+	&_white
+		color: $white
 
 .subtitle
 	margin-top: 7px
@@ -194,6 +209,10 @@ nav
 	font-size: 17px
 	font-style: normal
 	font-weight: 400
+	&_white
+		color: $white
+		margin-top: 0
+		font-weight: 300
 
 .mobile
 	min-height: 864px
@@ -242,22 +261,23 @@ nav
 
 			
 .choice
+	position: relative
 	min-height: 900px
 	padding-top: 59px
-	background: url('../img/fourth-page/bg/darkbg.png') center 0% / 101% 56% no-repeat, url('../img/fourth-page/bg/bg.png') center 100% / 101% 44% no-repeat
-	.label
-		background: $white
-		color: $black
-		font-size: 11px
-		font-weight: 400
-		border: none
-	.title
-		color: $white
-	.subtitle
-		color: $white
-		margin-top: 0
+	// background: url('../img/fourth-page/bg/darkbg.png') center 0% / 101% 56% no-repeat, url('../img/fourth-page/bg/bg.png') center 100% / 101% 44% no-repeat
+	background: url('../img/fourth-page/bg/bg.png') center 100% / 101% 397px no-repeat
+	&_black_bg
+		position: absolute
+		height: 502px
+		width: 100%
+		top: 0
+		left: 0
+		background: #070716
+		z-index: 1
 	&_car_img
+		position: relative
 		margin-top: 54px
+		z-index: 2
 		img 
 			display: block
 			margin: 0 auto
