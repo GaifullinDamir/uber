@@ -392,17 +392,19 @@ header
 			@include link_hover
 
 footer 
-	min-height: 160
+	min-height: 160px
 	.container-fluid
 		padding-top: 12px
 
 	.footer
 		&_nav
-			display: flex
+			// position: relative
+			// display: flex
+			// justify-content: space-between
 		&_delimeter
 			margin: 0 auto
 			width: 300px
-			height: 10px
+			height: 5px
 			background: $beauty-blue
 		&_socialmedia
 			&_list
@@ -415,6 +417,7 @@ footer
 						width: 35px
 						height: 35px
 		&_links
+			margin-top: 31px
 			&_items_main
 				text-align: center
 				font-size: 15px
@@ -448,8 +451,11 @@ footer
 					text-decoration: none
 		&_store
 			&_list
+				display: flex
+				align-items: center
+				list-style-type: none
 				&_item
+					margin: 0 4px 0 4px
 					img
 						width: 80px
-						height: 26px
 
