@@ -9,6 +9,11 @@ $pale-red: #ff5656
 		background-image: none
 		background-color: $beauty-blue
 
+@mixin link_hover
+	transition: 0.3s all
+	&:hover
+		color: $white
+
 * 
 	font-family: 'Roboto', sans-serif 
 header 
@@ -367,3 +372,21 @@ nav
 			&_item
 				&::before
 					background: url('../icons/check_red.svg') center (center / cover) no-repeat
+
+.cities
+	height: 716px
+	padding-top: 48px
+	background: url('../img/sixth-page/bg/world_bg.png') center (center / contain) no-repeat
+	background-color: #080810
+	&_link
+		margin-top: 440px
+		text-align: center
+		font-size: 15px
+		font-style: normal
+		font-weight: 400
+		line-height: 68px
+		text-transform: uppercase
+		a
+			color: $beauty-blue
+			text-decoration: none
+			@include link_hover
