@@ -18,13 +18,13 @@ $pale-red: #ff5656
 	font-family: 'Roboto', sans-serif 
 header 
 	position: relative 
-nav 
-	position: fixed 
-	top: 0 
-	width: 100% 
-	min-height: 53px 
-	background: $less-black
-	z-index: 5 
+	nav 
+		position: fixed 
+		top: 0 
+		width: 100% 
+		min-height: 53px 
+		background: $less-black
+		z-index: 5 
 .menu 
 	display: flex 
 	justify-content: space-between 
@@ -390,3 +390,21 @@ nav
 			color: $beauty-blue
 			text-decoration: none
 			@include link_hover
+
+footer 
+	min-height: 160
+	.container-fluid
+		padding-top: 12px
+	.footer
+		&_delimeter
+			margin: 0 auto
+			width: 300px
+			height: 10px
+			background: $beauty-blue
+		&_socialmedia
+			&_list
+				display: flex
+				list-style-type: none
+				&item
+					width: 35px
+					height: 35px
