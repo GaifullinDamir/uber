@@ -395,7 +395,10 @@ footer
 	min-height: 160
 	.container-fluid
 		padding-top: 12px
+
 	.footer
+		&_nav
+			display: flex
 		&_delimeter
 			margin: 0 auto
 			width: 300px
@@ -411,3 +414,42 @@ footer
 					img
 						width: 35px
 						height: 35px
+		&_links
+			&_items_main
+				text-align: center
+				font-size: 15px
+				font-style: normal
+				font-weight: 300
+				text-transform: uppercase
+				a
+					margin: 0 17px 0 17px
+					color: #070716
+					text-decoration: none
+			&_items_secondary
+				margin-top: 8px
+				text-align: center
+				font-size: 11px
+				font-style: normal
+				font-weight: 300
+				text-transform: uppercase
+				a
+					margin: 0 7px 0 7px
+					color: #999
+					text-decoration: none
+			&_items_language
+				margin-top: 8px
+				text-align: center
+				font-size: 11px
+				font-style: normal
+				font-weight: 400
+				text-transform: uppercase
+				a
+					color: $beauty-blue
+					text-decoration: none
+		&_store
+			&_list
+				&_item
+					img
+						width: 80px
+						height: 26px
+
