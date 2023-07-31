@@ -188,7 +188,7 @@ nav {
     text-transform: uppercase;
 }
 
-.advantages .advanteges_card {
+.advantages .advantages_card {
     /* min-height: 150px; */
     margin-top: 16px;
     margin-bottom: 26px;
@@ -197,7 +197,7 @@ nav {
     align-items: center;
 }
 
-.advantages .advanteges_card .advantages_imgbg {
+.advantages .advantages_card .advantages_imgbg {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,7 +207,7 @@ nav {
     border-radius: 100%;
 }
 
-.advantages .advanteges_card .advantages_descr {
+.advantages .advantages_card .advantages_descr {
     padding-left: 25px;
     color: #202020;
     font-size: 15px;
@@ -223,7 +223,7 @@ nav {
     width: 340px;
 } 
 
-.advantages .advanteges_card .advantages_descr span{
+.advantages .advantages_card .advantages_descr span{
     color: #1EACC7;
     font-size: 17px;
     font-style: normal;

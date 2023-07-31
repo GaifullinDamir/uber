@@ -4,15 +4,34 @@ $black: #000000
 $less-black: #222222
 $pale-red: #ff5656 
 	
+@mixin header_link_hover
+	transition: 0.3s all
+	&:hover
+		color: $beauty-blue
+
 @mixin btn_hover
 	&:hover
-		background-image: none
-		background-color: $beauty-blue
+		background-image: linear-gradient(0deg, #42abc0 0%, #a1efff 100%) 
 
 @mixin link_hover
 	transition: 0.3s all
 	&:hover
 		color: $white
+
+@mixin footer_socialmedia_store_link_hover
+	transition: 0.3s all
+	&:hover
+		opacity: 0.8
+@mixin footer_link_hover
+	transition: 0.3s all
+	&:hover
+		color: $beauty-blue
+
+@mixin footer_link_hover_reverse
+	transition: 0.3s all
+	&:hover
+		color: $black
+		opacity: 0.7
 
 * 
 	font-family: 'Roboto', sans-serif 
@@ -37,6 +56,7 @@ header
 		font-style: normal 
 		font-weight: 300 
 		text-decoration: none 
+		@include header_link_hover
 	&_item 
 		border-right: 2px dotted $black 
 		padding-right: 30px 
@@ -84,7 +104,6 @@ header
 		color: $white
 		text-align: center 
 		text-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.21) 
-		font-family: Roboto s
 		font-size: 14px 
 		font-style: normal 
 		font-weight: 400 
@@ -144,10 +163,10 @@ header
 		@include btn_hover
 .advantages 
 	min-height: 850px 
-	padding-top: 17px
+	padding-top: 16px
 	background: $white
 	&_card 
-		margin-top: 16px 
+		margin-top: 17px
 		margin-bottom: 26px 
 		display: flex 
 		justify-content: center 
@@ -298,7 +317,6 @@ header
 	position: relative
 	min-height: 900px
 	padding-top: 59px
-	// background: url('../img/fourth-page/bg/darkbg.png') center 0% / 101% 56% no-repeat, url('../img/fourth-page/bg/bg.png') center 100% / 101% 44% no-repeat
 	background: url('../img/fourth-page/bg/bg.png') center 100% / 101% 397px no-repeat
 	&_black_bg
 		position: absolute
@@ -349,9 +367,6 @@ header
 			&::before
 
 				content: ''
-				// display: inline-block
-				// vertical-align: middle
-				// transform: translate(-7px, -2px)
 				display: block
 				position: absolute
 				left: -32px
@@ -391,32 +406,43 @@ header
 			text-decoration: none
 			@include link_hover
 
-footer 
+footer
+	padding-top: 12px
 	min-height: 160px
-	.container-fluid
-		padding-top: 12px
-
 	.footer
-		&_nav
-			// position: relative
-			// display: flex
-			// justify-content: space-between
+		&_wrapper
+			position: relative
+			display: flex
+			justify-content: space-between
 		&_delimeter
 			margin: 0 auto
 			width: 300px
 			height: 5px
 			background: $beauty-blue
 		&_socialmedia
+			// position: relative
+			// left: -15px
+			width: 33%
 			&_list
 				margin-top: 26px
 				display: flex
 				list-style-type: none
 				&_item
+					display: flex
+					justify-content: center
+					align-items: center
 					margin-right: 6px
-					img
-						width: 35px
-						height: 35px
+					width: 35px
+					height: 35px
+					background-color: #070716
+					border-radius: 100%
+					i
+						color: $white
+					a
+						@include footer_socialmedia_store_link_hover
 		&_links
+			// margin: 0 auto
+			width: 33%
 			margin-top: 31px
 			&_items_main
 				text-align: center
@@ -428,6 +454,7 @@ footer
 					margin: 0 17px 0 17px
 					color: #070716
 					text-decoration: none
+					@include footer_link_hover
 			&_items_secondary
 				margin-top: 8px
 				text-align: center
@@ -439,6 +466,7 @@ footer
 					margin: 0 7px 0 7px
 					color: #999
 					text-decoration: none
+					@include footer_link_hover
 			&_items_language
 				margin-top: 8px
 				text-align: center
@@ -449,13 +477,108 @@ footer
 				a
 					color: $beauty-blue
 					text-decoration: none
+					@include footer_link_hover_reverse
 		&_store
+			// position: relative
+			// right: 7px
+			width: 33%
 			&_list
 				display: flex
+				justify-content: flex-end
 				align-items: center
 				list-style-type: none
+				padding-right: 15px
 				&_item
 					margin: 0 4px 0 4px
+					a
+						@include footer_socialmedia_store_link_hover
 					img
 						width: 80px
+
+// footer 
+// 	min-height: 160px
+// 	.container-fluid
+// 		padding-top: 12px
+
+// 	.footer
+// 		&_nav
+// 			position: relative
+// 		&_delimeter
+// 			margin: 0 auto
+// 			width: 300px
+// 			height: 5px
+// 			background: $beauty-blue
+// 		&_socialmedia
+// 			position: absolute
+// 			left: -25px
+// 			&_list
+// 				margin-top: 26px
+// 				display: flex
+// 				list-style-type: none
+// 				&_item
+// 					display: flex
+// 					justify-content: center
+// 					align-items: center
+// 					margin-right: 6px
+// 					width: 35px
+// 					height: 35px
+// 					background-color: #070716
+// 					border-radius: 100%
+// 					i
+// 						color: $white
+// 					a
+// 						@include footer_socialmedia_store_link_hover
+						
+// 					// img
+// 					// 	width: 35px
+// 					// 	height: 35px
+// 		&_links
+// 			margin-top: 31px
+// 			&_items_main
+// 				text-align: center
+// 				font-size: 15px
+// 				font-style: normal
+// 				font-weight: 300
+// 				text-transform: uppercase
+// 				a
+// 					margin: 0 17px 0 17px
+// 					color: #070716
+// 					text-decoration: none
+// 					@include footer_link_hover
+// 			&_items_secondary
+// 				margin-top: 8px
+// 				text-align: center
+// 				font-size: 11px
+// 				font-style: normal
+// 				font-weight: 300
+// 				text-transform: uppercase
+// 				a
+// 					margin: 0 7px 0 7px
+// 					color: #999
+// 					text-decoration: none
+// 					@include footer_link_hover
+// 			&_items_language
+// 				margin-top: 8px
+// 				text-align: center
+// 				font-size: 11px
+// 				font-style: normal
+// 				font-weight: 400
+// 				text-transform: uppercase
+// 				a
+// 					color: $beauty-blue
+// 					text-decoration: none
+// 					@include footer_link_hover_reverse
+// 		&_store
+// 			position: absolute
+// 			right: 7px
+// 			&_list
+// 				display: flex
+// 				align-items: center
+// 				list-style-type: none
+// 				&_item
+// 					margin: 0 4px 0 4px
+// 					a
+// 						@include footer_socialmedia_store_link_hover
+// 					img
+// 						width: 80px
 
