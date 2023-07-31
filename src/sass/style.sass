@@ -46,8 +46,8 @@ header
 		z-index: 5 
 .menu 
 	display: flex 
-	justify-content: space-between 
-	padding: 14px 74px 
+	justify-content: center
+	padding: 14px 10px 
 	margin: 0 
 	list-style: none 
 	&_link 
@@ -59,7 +59,10 @@ header
 		@include header_link_hover
 	&_item 
 		border-right: 2px dotted $black 
-		padding-right: 30px 
+		padding: 0 40px 
+		text-align: center
+	&_item:last-child
+		border-right: none
 .subheader 
 	margin-top: 53px 
 	position: absolute 
@@ -310,9 +313,6 @@ header
 			&:hover
 				&::before, &::after
 					background-color: $white
-					
-
-			
 .choice
 	position: relative
 	min-height: 900px
@@ -420,8 +420,6 @@ footer
 			height: 5px
 			background: $beauty-blue
 		&_socialmedia
-			// position: relative
-			// left: -15px
 			width: 33%
 			&_list
 				margin-top: 26px
@@ -441,7 +439,6 @@ footer
 					a
 						@include footer_socialmedia_store_link_hover
 		&_links
-			// margin: 0 auto
 			width: 33%
 			margin-top: 31px
 			&_items_main
@@ -479,8 +476,6 @@ footer
 					text-decoration: none
 					@include footer_link_hover_reverse
 		&_store
-			// position: relative
-			// right: 7px
 			width: 33%
 			&_list
 				display: flex
@@ -494,91 +489,3 @@ footer
 						@include footer_socialmedia_store_link_hover
 					img
 						width: 80px
-
-// footer 
-// 	min-height: 160px
-// 	.container-fluid
-// 		padding-top: 12px
-
-// 	.footer
-// 		&_nav
-// 			position: relative
-// 		&_delimeter
-// 			margin: 0 auto
-// 			width: 300px
-// 			height: 5px
-// 			background: $beauty-blue
-// 		&_socialmedia
-// 			position: absolute
-// 			left: -25px
-// 			&_list
-// 				margin-top: 26px
-// 				display: flex
-// 				list-style-type: none
-// 				&_item
-// 					display: flex
-// 					justify-content: center
-// 					align-items: center
-// 					margin-right: 6px
-// 					width: 35px
-// 					height: 35px
-// 					background-color: #070716
-// 					border-radius: 100%
-// 					i
-// 						color: $white
-// 					a
-// 						@include footer_socialmedia_store_link_hover
-						
-// 					// img
-// 					// 	width: 35px
-// 					// 	height: 35px
-// 		&_links
-// 			margin-top: 31px
-// 			&_items_main
-// 				text-align: center
-// 				font-size: 15px
-// 				font-style: normal
-// 				font-weight: 300
-// 				text-transform: uppercase
-// 				a
-// 					margin: 0 17px 0 17px
-// 					color: #070716
-// 					text-decoration: none
-// 					@include footer_link_hover
-// 			&_items_secondary
-// 				margin-top: 8px
-// 				text-align: center
-// 				font-size: 11px
-// 				font-style: normal
-// 				font-weight: 300
-// 				text-transform: uppercase
-// 				a
-// 					margin: 0 7px 0 7px
-// 					color: #999
-// 					text-decoration: none
-// 					@include footer_link_hover
-// 			&_items_language
-// 				margin-top: 8px
-// 				text-align: center
-// 				font-size: 11px
-// 				font-style: normal
-// 				font-weight: 400
-// 				text-transform: uppercase
-// 				a
-// 					color: $beauty-blue
-// 					text-decoration: none
-// 					@include footer_link_hover_reverse
-// 		&_store
-// 			position: absolute
-// 			right: 7px
-// 			&_list
-// 				display: flex
-// 				align-items: center
-// 				list-style-type: none
-// 				&_item
-// 					margin: 0 4px 0 4px
-// 					a
-// 						@include footer_socialmedia_store_link_hover
-// 					img
-// 						width: 80px
-
