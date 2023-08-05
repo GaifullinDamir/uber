@@ -205,8 +205,12 @@
                             width: 65px
 
 @media (max-width: 575px)
+    header
+        nav
+            min-height: 32px
     .subheader
         min-height: 60px
+        margin-top: 32px
         &_official
             display: none
         &_phone
@@ -216,6 +220,7 @@
             font-style: normal
             font-weight: 400
             text-transform: uppercase
+            margin-top: 0
         &_btn
             width: 110px
             height: 22px
@@ -268,6 +273,29 @@
             &_descr
                 width: 100%
                 margin-top: 27px
+    .mobile
+        padding-bottom: 40px
+        &_item
+            width: 290px
+            height: 254px
+    .choice
+        min-height: 393px
+        background: none
+        &_black_bg
+            padding-top: 27px
+            min-height: 393px
+            height: 393px
+            .title
+                display: none
+            .subtitle
+                display: none
+        &_car_img
+            margin-top: 36px
+        &_descr
+            position: relative
+            color: $white
+            z-index: 2
+    
     .title
         font-size: 16px
         margin-top: 15px
