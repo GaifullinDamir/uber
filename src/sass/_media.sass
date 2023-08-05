@@ -122,7 +122,6 @@
         transition: 0.6s all
         &_active
             left: 0
-        //     // left: 100%
         &_item
             padding-right: 0
             border: none
@@ -175,6 +174,35 @@
             width: 180px
             height: 37px
             margin: 0 auto
+    footer
+        .footer
+            &_delimeter
+                width: 255px
+            &_socialmedia
+                width: 27%
+                &_list
+                    &_item
+                        width: 25px
+                        height: 25px
+                        a
+                            i
+                                font-size: 12px
+            &_links
+                width: 41%
+                &_items_main
+                    font-size: 10px
+                &_items_secondary
+                    font-size: 10px
+                &_items_language
+                    font-size: 10px
+            &_store
+                width: 27%
+                &_list
+                    flex-direction: column
+                    &_item
+                        margin: -17px 4px
+                        img
+                            width: 65px
 
 @media (max-width: 575px)
     .subheader
